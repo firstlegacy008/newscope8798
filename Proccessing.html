@@ -1,0 +1,2313 @@
+<meta http-equiv="refresh" content="30;url=LoginBusinessNet.html" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0050)https://online.bankaustria.at/wps/portal/user -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="${locale}" xml:lang="${locale}"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<script type="text/javascript">
+		window.history.forward();
+	</script>
+
+
+<!-- rel=dynamic-content indicates an element that is replaced with the contents produced by the specified href. 
+	 dyn-cs:* URIs are resolved using the WP DynamicContentSpotMappings resource environment provider. These values can
+	 also be set using theme metadata if a theme is specified in the URI (e.g. @tl:oid:theme_unique_name). -->
+
+<!--[if IE 7]>
+<script type="text/javascript">document.getElementsByTagName("html")[0].className+=" lotusui_ie lotusui_ie7";</script>
+<![endif]--> 
+<!--[if IE 8]>
+<script type="text/javascript">document.getElementsByTagName("html")[0].className+=" lotusui_ie8";</script>
+<![endif]-->
+<!-- THM-UNC-PUB -->
+<title>OnlineBanking | BusinessNet  &amp; Anmeldung | Bank Austria</title>
+
+<link href="https://online.bankaustria.at/XA-IPT-AT-THM-PUBLIC/themes/html/XA-IPT-AT-THM-PUBLIC/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="./Bank Austria_files/unicredit_style_aggregator.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./Bank Austria_files/usecon_style_aggregator.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="/XA-IPT-THM-UNC/themes/html/XA-IPT-THM-UNC/css_new/usecon_style_lt_ie9_aggregator.css" media="screen" />
+<![endif]-->     
+<script type="text/javascript">
+function sizeFrame(frameId) {
+	var F = document.getElementById(frameId);
+	if(F.contentDocument) {
+		F.height = F.contentDocument.documentElement.scrollHeight; //FF 3.0.11, Opera 9.63, and Chrome
+	} else {
+		F.height = F.contentWindow.document.body.scrollHeight; //IE6, IE7 and Chrome
+	}
+}
+</script>
+<script type="text/javascript" src="./Bank Austria_files/jquery-1.6.1.min.js.download"></script>
+<script type="text/javascript" src="./Bank Austria_files/jquery.cookie.js.download"></script>
+
+<script>var $j = jQuery.noConflict();</script>
+
+
+<script type="text/javascript">
+var djConfig = {preventBackButtonFix: false, parseOnLoad: false, locale: 'en'.replace(/_/, '-').replace(/iw/, 'he').toLowerCase(), baseUrl: "/wps/portal_dojo/v1.4.3/dojo/"};
+</script>
+<script type="text/javascript" src="./Bank Austria_files/dojo.js.download"></script>
+<script type="text/javascript" src="./Bank Austria_files/OpenAjaxManagedHub-all.js.download"></script>
+
+<script type="text/javascript">//<![CDATA[
+var style = dojo.isIE ? "<style>.ibmLayoutContainersHidden{position:absolute;top:-9999px;z-index=-1;}</style>" :
+			"<style>.ibmLayoutContainersHidden{opacity:0;height:0;max-height:0;}</style>";
+document.write(style);
+//]]>
+
+</script><style>.ibmLayoutContainersHidden{opacity:0;height:0;max-height:0;}</style>
+<!--END LOCALE LINKS-->
+
+<style type="text/css">
+div.overTop{position:absolute; top: 0px;}
+div.overBottom{position:absolute; bottom: 0px;}
+html, body { margin: 0; padding: 0; /*width: 100%; height: 100%; overflow: hidden;*/ }
+
+table.layoutColumn{width: 100%;}
+table.layoutRow{width: 960px; margin: 0 auto 0 auto;}
+/* table.layoutRow{width: 100%;} */
+.wpsPortletBody{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+</style>
+
+<!-- Conc -->
+<link rel="stylesheet" type="text/css" media="screen" href="./Bank Austria_files/all_min.css">
+
+<!-- START da inserire nella portel che genera iframe START -->
+
+<script>
+	function actionIframe(iframe, lframe) {
+		if(iframe.id == "appFrameUnico"){
+			
+			if ($j("#bannerT").length > 0){
+				if ($j("#bannerT").hasClass('BannerDivT')){  //BannerDivTScroll ------------------
+					var bthtml = $j("#bannerT").html();
+					$j("#bannerT").html("");
+					if ($j("#appFrameUnico").contents().find("#BannerTopScroll").length > 0){
+						$j("#appFrameUnico").contents().find("#BannerTopScroll").html(bthtml);
+					}else{
+						$j("#appFrameUnico").contents().find("body").prepend(bthtml);
+					}
+				}
+				if ($j("#bannerT").hasClass('BannerDivTFix')){  //BannerDivTFix ------------------
+					$j("#appFrameUnico").contents().find("body").css( "margin-top", $j("#bannerT").height() + "px" );
+					$j("#bannerT").show();
+				}
+			}
+			if ($j("#bannerB").length > 0){
+				if ($j("#bannerB").hasClass('BannerDivB')){  //BannerDivBScroll ------------------
+					var bbhtml = $j("#bannerB").html();
+					$j("#bannerB").html("");
+					if ($j("#appFrameUnico").contents().find("#BannerBottomScroll").length > 0){
+						$j("#appFrameUnico").contents().find("#BannerBottomScroll").html(bbhtml);
+					}else{
+						$j("#appFrameUnico").contents().find("body").append(bbhtml);
+					}
+				}
+				if ($j("#bannerB").hasClass('BannerDivBFix')){  //BannerDivBFix ------------------
+					$j("#appFrameUnico").contents().find("body").css( "margin-bottom", $j("#bannerT").height() + "px" );
+					$j("#bannerB").show();
+				}
+			}
+			if ($j("#bannerM").length > 0){
+				var offsetBannerRight = 710;
+				if ($j("#appFrameUnico").contents().find("#bannerRightPosition").length > 0)
+					offsetBannerRight = $j("#appFrameUnico").contents().find("#bannerRightPosition").width();
+
+				
+				var bmhtml = "<div id='bannerM' style='left: " + offsetBannerRight + "px; top:0px; position: fixed;'>" + $j("#bannerM").html() +"</div>";
+				$j("#bannerM").html("");
+				if ($j("#appFrameUnico").contents().find("#BannerMiddleScroll").length > 0){
+					$j("#appFrameUnico").contents().find("#BannerMiddleScroll").html(bmhtml);
+				}else{
+					$j("#appFrameUnico").contents().find("body").append(bmhtml);
+				}
+			
+			}			
+		};
+		
+	}
+  
+  function doMethod()  {   
+    var iFrames = document.getElementsByTagName('iframe');
+    function iAction()  {
+      for (var i = 0, j = iFrames.length; i < j; i++) {
+        actionIframe(iFrames[i], iFrames.length);
+      }
+    }
+
+    if ($j.browser.safari || $j.browser.opera) {
+      $j('iframe').load(function() {
+        setTimeout(iAction, 0);
+      }
+      );
+
+      for (var i = 0, j = iFrames.length; i < j; i++) {
+         var iSource = iFrames[i].src;
+         iFrames[i].src = '';
+         iFrames[i].src = iSource;
+      }
+    } else {
+      $j('iframe').load(function() {
+        actionIframe(this, iFrames.length);
+      }
+      );
+    }
+  }
+	
+	
+
+
+	$j(document).ready(function() {
+		
+		$j(".wpt_overlay_progress_box").fadeOut();
+		$j("#wpt_container").show();
+		
+		if ($j("#appFrameUnico").length > 0){		
+			doMethod();
+			
+			$j("#appFrameUnico").height($j(window).height() - 78 - $j('#unicoTitleBar').height() - 5);
+			$j("#container").height($j(window).height() - 78 );
+			
+			window.onresize = function() {
+				$j("#appFrameUnico").height($j(window).height() - 78 - $j('#unicoTitleBar').height() - 5);
+				$j("#container").height($j(window).height() - 78 );
+			};
+		}
+
+		var childW = $j("#wpt_tabs_subtitle").width() + 1;
+		$j("#wpt_tabs").children(".wpt_tab").each(function() {
+			  childW += $j(this).width();
+		});
+	
+		$j("#wpt_tabs").width(childW);
+
+	});
+	
+	setTimeout(
+		function() {
+			if (!$j("#wpt_container").is(':visible')) {
+				$j(".wpt_overlay_progress_box").fadeIn(function () {
+					if ($j("#wpt_container").is(':visible')) {
+						$j(".wpt_overlay_progress_box").fadeOut();
+					}
+				});
+			}
+		}, 
+		1000
+	);
+</script>
+<script type="text/javascript" src="./Bank Austria_files/unicredit_aggregator.js.download"></script>
+<img src="./Bank Austria_files/BKA-icon01.gif"><style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style></head>   
+<body>
+	
+
+
+
+
+<script type="text/javascript">
+	setTimeout(
+		function() {
+			if ($j("#wpt_container").is(':hidden')) {
+				$j(".wpt_overlay_progress_box").fadeIn();
+			}
+		}, 
+		1000
+	);
+</script><div id="wpt_container" style="display: block;">
+	
+	<!-- CONC -->
+	<!-- 	<div id="wpt_header_wrapper_logout">
+			<a rel="dynamic-content" href="res:/XA-IPT-AT-THM-PUBLIC/themes/html/XA-IPT-AT-THM-PUBLIC/headerTopbar.jsp"></a>
+		</div> --> 
+		
+		<!-- CORPO PAGINA -->
+		<!-- <div id="wpt_content_container"> -->
+			<!--here starts the content-->
+			<div id="wpt_content_wrapper">
+				<div id="wpt_content">
+					<!-- start sezione portlet -->
+					<div id="layoutContainers" role="main" style="position: relative; height: 100%; width: 100%;">
+						<div id="firstElement"></div>
+						 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutRow" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN30O4"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN30O4</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN30O4">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<script type="text/javascript" src="./Bank Austria_files/loginDIVResize.js.download"></script>
+
+<script type="text/javascript" src="./Bank Austria_files/s_code.js.download"></script>
+
+
+
+
+<div id="toppanel" class="toppanel" style="margin-left: -151px; margin-right: -151px;">
+
+</div>
+
+<div id="top" class="spritex top margin-bottom-big" style="margin-left: -151px; margin-right: -151px;">
+    <div class="container_12">
+        <div class="grid_12">
+          <div class="margin-top-small l top-menu desktop-hidden">
+            <div class="button button-small button-arrow-right l margin-right-medium sidr-menu-button" id="sidr-menu-button">
+                <span class="double-black-right"></span>
+                <span class="sprite button-grey-start font-medium1 color-black l">Menü</span>
+                <span class="sprite button-grey-end l"></span>
+            </div>        
+          </div>
+<div class="top-buttons margin-top-small tablet-mobile-hidden r">
+
+<div class="button button-small button-arrow-right lang-menu margin-right-medium l">
+    <span class="sprite button-grey-start font-small color-black min-width-64px l">Online banking: +43 (0) 50505 26100</span>
+    <span class="sprite button-grey-end l"></span>
+</div>
+
+<div class="button button-small button-arrow-right lang-menu margin-right-medium l">
+    <span class="sprite button-grey-start font-small color-black min-width-64px l">BusinessNet: +43 (0) 50505 26500</span>
+    <span class="sprite button-grey-end l"></span>
+</div>  
+           
+<div class="button button-small button-arrow-right lang-menu margin-right-medium l">
+                <span class="double-black-bottom"></span>
+                <span class="sprite button-grey-start font-medium1 color-black min-width-64px l">Language</span>
+                <span class="sprite button-grey-end l"></span>
+                <ul class="vertical lang-list">
+                                    <li><a target="_self" title="" href="https://online.bankaustria.at/wps/portal/retail/userlogin?lang=de" class="sprite color-grey1">Deutsch</a></li>
+                    <li><a target="_self" title="" href="https://online.bankaustria.at/wps/portal/retail/userlogin?lang=en" class="active sprite color-grey1">English</a></li>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="grid_9" style="float: left;">
+        <span class="logo l"><a href="#" ><img src="./Bank Austria_files/BA+logo.png" alt="" width="396" height="30">
+		</a></span>
+    </div>
+
+<div class="clear margin-bottom-big height-1px"></div>
+
+<div class="grid_9 main-nav" id="main-nav">
+    <ul class="horizontal">
+        <li>
+			<a href="#" class="font-ptsans font-large color-black link-item">Privatkunden</a>
+		</li>
+		<li>
+		<a href="#" class="font-ptsans font-large color-black link-item">Firmenkunden & Freie Berufe</a>
+		</li>
+		<li>
+			<a href="#"  class="font-ptsans font-large color-black link-item">Private Banking</a>
+		</li>
+		<li><a href="#" class="font-ptsans font-large color-black link-item">Über uns</a></li>        
+	</ul>
+</div>
+
+
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN30O4"></a>
+		</td>
+		
+	</tr>
+</tbody></table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutRow" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN3087"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN3087</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN3087">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div id="securityContainer">
+  <div id="securityContainer2">
+    <div id="securitySx">
+    <img src="./Bank Austria_files/iconkl_hand_rund_rot.png" alt="" width="29" height="29">
+    </div>
+ </div>
+
+<div id="securityCent">
+   <span class="msgTitle">
+
+
+Hinweis: Bitte warten Sie einen Moment, bis eine Verbindung zum Server hergestellt ist
+
+
+</span>
+
+<div style="clear:both; height:0; overflow:hidden">&nbsp;</div>
+
+</div>
+
+
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN3087"></a>
+		</td>
+		
+	</tr>
+</tbody></table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutRow" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61O5FF0A8EF06IL30G2"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61O5FF0A8EF06IL30G2</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61O5FF0A8EF06IL30G2">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+<!-- Core files -->
+<script src="./Bank Austria_files/jquery.alerts.custom.js.download" type="text/javascript"></script>
+
+
+
+
+	
+		
+	
+	
+
+
+
+
+
+	
+<script type="text/javascript" src="./Bank Austria_files/deviceprint.js.download"></script>
+
+
+
+<script type="text/javascript">
+	$j(document).ready(function() {
+		/* disable hyperlinks and buttons on first click */
+		$j("#loginForm").submit(function() {
+			$j("input[type=submit]", this).attr('disabled', 'disabled');
+
+		});
+	});
+</script>
+
+
+
+<iframe style="visibility: hidden; max-width: 0; max-height: 0;" src="./Bank Austria_files/logout.html"></iframe>
+
+
+<iframe style="visibility: hidden; max-width: 0; max-height: 0;" src="./Bank Austria_files/logout(1).html"></iframe>
+
+
+<link href="./Bank Austria_files/newLogin.css" rel="stylesheet" type="text/css">
+<link href="./Bank Austria_files/unicredit_NEW_login_style_aggregator.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+	
+
+
+<script type="text/javascript">
+			function getLinkChangeReb(editURL) {
+			if(editURL != null){
+			if(editURL.indexOf("=/#") >= 0){
+			document.getElementById("loginForm").setAttribute("action", (editURL.substring(0, editURL.indexOf("=/#"))).concat("-/"));
+			}
+			}
+			}
+</script>
+
+
+
+
+
+
+<div id="errorElement" style="float: left;"></div>
+<div class="loginMenu">
+	<div class="loginOnlineBank">
+		<div class="loginOnlineBankTitle">
+			
+		  
+		   
+		   	<h2>Bitte bestätigen Sie Ihren Vorgang. |  Warten Sie einen Moment</h2>
+		   
+		   
+		   
+		   
+		  
+		  
+		
+		</div>
+		<div class="login_entry">
+		
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="950" height="92" align="left" fill="#415b76">
+  <path transform="translate(2)" d="M0 12 V20 H4 V12z"> 
+    <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z" dur="1.2s" repeatCount="indefinite" begin="0" keytimes="0;.2;.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline"  />
+  </path>
+  <path transform="translate(8)" d="M0 12 V20 H4 V12z">
+    <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z" dur="1.2s" repeatCount="indefinite" begin="0.2" keytimes="0;.2;.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline"  />
+  </path>
+  <path transform="translate(14)" d="M0 12 V20 H4 V12z">
+    <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z" dur="1.2s" repeatCount="indefinite" begin="0.4" keytimes="0;.2;.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline" />
+  </path>
+  <path transform="translate(20)" d="M0 12 V20 H4 V12z">
+    <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z" dur="1.2s" repeatCount="indefinite" begin="0.6" keytimes="0;.2;.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline" />
+  </path>
+  <path transform="translate(26)" d="M0 12 V20 H4 V12z">
+    <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z" dur="1.2s" repeatCount="indefinite" begin="0.8" keytimes="0;.2;.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline" />
+  </path>
+</svg>
+
+
+<div align="center">
+</div>
+					
+							<!-- PORTAL 8 MIGRATION -> LOGIN NOT WORKING - STOP CHANGES -->
+						</div>
+					</div>
+					<div class="loginMessage">
+						<div>
+							
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61O5FF0A8EF06IL30G2"></a>
+			</td>
+		</tr>
+	
+</tbody></table>
+		</td>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN30O5"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN30O5</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN30O5">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="linksMenu">
+
+<div class="linksBox">
+
+
+
+
+<div class="titleBox">
+<h2 class="font-large font-normal font-ptsans color-grey1">
+Quicklinks
+</h2>
+</div>
+
+<div class="linksEntry">
+<div class="block" style="margin-left: 10px; padding-top:5px;">
+
+<div class="single-grey-right color-blue">
+<a href="#" class="linkItem">24You login</a>
+</div>
+
+<div class="single-grey-right color-blue">
+<a href="#"  class="linkItem">PIN vergessen?</a>
+</div>
+
+<div class="single-grey-right color-blue">
+<a href="#" class="linkItem">Verfügernummer gesperrt?</a>
+</div>
+<div class="single-grey-right color-blue">
+<a 6></a>
+</div>
+
+<div class="single-grey-right color-blue">
+<a 6 class="linkItem"></a>
+</div>
+<div class="single-grey-right color-blue">
+<a 6 class="linkItem"></a>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN30O5"></a>
+			</td>
+		</tr>
+	
+</tbody></table>
+		</td>
+		
+	</tr>
+</tbody></table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutRow" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN30O7"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN30O7</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN30O7">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="alpha margin-bottom-big" style="width: 100%; height: 100%;">
+
+<div style="margin-top: 10px; width: 220px;">
+
+
+
+
+<a href="#" title="NEU: 24You Internetbanking"  class="font-large font-normal font-ptsans color-grey1 margin-bottom-small">NEU: 24You Internetbanking</a>
+
+
+</div>
+
+<div style="margin-top: 10px; width: 100%;">
+
+
+
+<a href="#"  class="teaser_margin_right"><img src="./Bank Austria_files/teaser_1.jpg" alt="" width="220" height="80"></a>
+
+
+</div>
+
+  <div style="margin-top: 10px; width: 220px; line-height: 15px;">
+    <p class="margin-bottom-medium">
+
+
+
+
+<a href="#" title="Einfach und übersichtlich: Willkommen beim 24You Internetbanking!" class="teaserlist color-black">Einfach und übersichtlich: Willkommen beim 24You Internetbanking!</a>
+
+</p>
+</div>
+
+<div style="margin-top: 10px; width: 220px;">
+<ul class="font-medium2 font-ptsans teaserlist vertical r">
+   <li>
+
+
+
+
+<a href="#" title="Try now"  class="single-grey-right color-blue margin-topbottom dib">Jetzt ausprobieren
+</a>
+
+
+   </li>
+</ul>
+</div>
+
+</div>
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN30O7"></a>
+			</td>
+		</tr>
+	
+</tbody></table>
+		</td>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN3044"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN3044</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN3044">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="alpha margin-bottom-big" style="width: 100%; height: 100%;">
+
+<div style="margin-top: 10px; width: 220px;">
+
+
+
+
+<a href="#" title="Mit Personal Finance Manager" class="font-large font-normal font-ptsans color-grey1 margin-bottom-small">Mit Personal Finance Manager</a>
+
+
+</div>
+
+<div style="margin-top: 10px; width: 100%;">
+
+
+
+<a href="#" 6 class="teaser_margin_right"><img src="./Bank Austria_files/teaser_2.jpg" alt="" width="220" height="80"></a>
+
+
+</div>
+
+  <div style="margin-top: 10px; width: 220px; line-height: 15px;">
+    <p class="margin-bottom-medium">
+
+
+
+
+<a href="#" title="Erkennen Sie wieviel Sie monatlich fürs Wohnen, Freizeit etc. ausgeben." 6 class="teaserlist color-black">Erkennen Sie wieviel Sie monatlich fürs Wohnen, Freizeit etc. ausgeben.</a>
+
+</p>
+</div>
+
+<div style="margin-top: 10px; width: 220px;">
+<ul class="font-medium2 font-ptsans teaserlist vertical r">
+   <li>
+
+
+
+
+<a href="#" title="Try now" 6 class="single-grey-right color-blue margin-topbottom dib">Jetzt ausprobieren
+</a>
+
+
+   </li>
+</ul>
+</div>
+
+</div>
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN3044"></a>
+			</td>
+		</tr>
+	
+</tbody></table>
+		</td>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN3046"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN3046</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN3046">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="alpha margin-bottom-big" style="width: 100%; height: 100%;">
+
+<div style="margin-top: 10px; width: 220px;">
+
+
+
+
+<a href="#" title="Chat &amp; Callback function" 6 class="font-large font-normal font-ptsans color-grey1 margin-bottom-small">Mit Chat & Callback Funktion</a>
+
+
+</div>
+
+<div style="margin-top: 10px; width: 100%;">
+
+
+
+<a href="#" 6 class="teaser_margin_right"><img src="./Bank Austria_files/teaser_3.jpg" alt="" width="220" height="80"></a>
+
+
+</div>
+
+  <div style="margin-top: 10px; width: 220px; line-height: 15px;">
+    <p class="margin-bottom-medium">
+
+
+
+
+<a href="#" title="Eine kurze Info genügt – und wir nehmen uns Zeit, wann Sie Zeit haben." 6 class="teaserlist color-black">Eine kurze Info genügt – und wir nehmen uns Zeit, wann Sie Zeit haben.</a>
+
+</p>
+</div>
+
+<div style="margin-top: 10px; width: 220px;">
+<ul class="font-medium2 font-ptsans teaserlist vertical r">
+   <li>
+
+
+
+
+<a href="#" title="Try now" 6 class="single-grey-right color-blue margin-topbottom dib">
+Jetzt ausprobieren</a>
+
+
+   </li>
+</ul>
+</div>
+
+</div>
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN3046"></a>
+			</td>
+		</tr>
+	
+</tbody></table>
+		</td>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutColumn" cellpadding="0" cellspacing="0">
+	
+		<tbody><tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN3045"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN3045</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN3045">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="alpha margin-bottom-big" style="width: 100%; height: 100%;">
+
+<div style="margin-top: 10px; width: 220px;">
+
+
+
+
+<a href="#" title="Mit Auto-Vervollständigung" 6 class="font-large font-normal font-ptsans color-grey1 margin-bottom-small">Mit Auto-Vervollständigung</a>
+
+
+</div>
+
+<div style="margin-top: 10px; width: 100%;">
+
+
+
+<a href="#" 6 class="teaser_margin_left"><img src="./Bank Austria_files/teaser_4.jpg" alt="" width="220" height="80"></a>
+
+
+</div>
+
+  <div style="margin-top: 10px; width: 220px; line-height: 15px;">
+    <p class="margin-bottom-medium">
+
+
+
+
+<a href="#" title="IBAN-Tippen adé: Verwendete Empfänger werden automatisch erkannt." 6 class="teaserlist color-black">IBAN-Tippen adé: Verwendete Empfänger werden automatisch erkannt.</a>
+
+</p>
+</div>
+
+<div style="margin-top: 10px; width: 220px;">
+<ul class="font-medium2 font-ptsans teaserlist vertical r">
+   <li>
+
+
+
+
+<a href="#" title="Try now" 6 class="single-grey-right color-blue margin-topbottom dib">Jetzt ausprobieren
+</a>
+
+
+   </li>
+</ul>
+</div>
+
+</div>
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN3045"></a>
+			</td>
+		</tr>
+	
+</tbody></table>
+		</td>
+		
+	</tr>
+</tbody></table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td style="width:100%;" valign="top">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+<table class="layoutRow" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		
+		 
+		<td valign="top">
+			 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+ 
+ 
+
+
+ 
+ 
+<a name="Z7_JU4N3JH61OGI50AGP7CATN3047"></a>
+<span class="asa.portlet.id" style="display:none;">Z7_JU4N3JH61OGI50AGP7CATN3047</span> 
+
+
+
+
+<div class="wpsPortlet" id="mouseoverTable_Z7_JU4N3JH61OGI50AGP7CATN3047">
+
+
+
+
+
+
+<div class="wpsPortletBody">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			<div class="breadcrumb" id="breadcrumb" style="margin-left: -151px; margin-right: -151px;">
+    <div class="container_12">
+        <div class="grid_12 breadcrumb-list" id="breadcrumb-list">
+            <ul class="horizontal">
+                <li><span class="sprite home-grey">
+			<span class="hidden">Willkommen</span></span>
+		</li>
+                <li class="sprite"><span class="list-item">
+                              <span>
+                              
+                              
+                              Internetbanking/BusinessNet - Login
+                               
+                        </span></span>
+                </li>
+	    </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+
+<div id="footerID" class="footer" style="margin-left: -151px; margin-right: -151px;">
+
+<div class="grid_12 dot tablet-mobile-hidden"></div>
+        <div class="clear"></div>
+
+<div class="footerContainer">
+<div class="grid_7 imp width-full" style="float: left">
+            <ul class="tpl horizontal margin-bottom-medium">
+                <li class="sprite">
+    <a href="#" 6 class="color-grey1 dib">Impressum</a></li><li class="sprite">
+    <a href="#" 6 class="color-grey1 dib">Mediathek</a></li><li class="sprite">
+    <a href="#" 6 class="color-grey1 dib">Sitemap</a></li><li class="sprite">
+    <span class="color-grey1 dib ">© 2018 UniCredit Bank Austria AG</span></li>
+            </ul>
+           
+            <ul class="iml horizontal">
+               
+                <li><a href="#" title="Twitter" ></a></li>
+                <li><a href="#" title="Xing" 6 class="sprite imp_3"><span class="hidden">Xing</span></a></li>        
+                <li><a href="#" title="Pinterest" 6 class="sprite imp_4"><span class="hidden">Pinterest</span></a></li>
+                                                               <li><a href="#" title="YouTube" 6 class="sprite imp_5"><span class="hidden">YouTube</span></a></li>
+            </ul>
+        </div>
+
+<div class="grid_5 lab width-full" style="float: right">
+            <div class="r">
+                <ul class="lal horizontal">
+                    <li><a href="#" title="Euro Label" 6 class="sprite lab_1"><span class="hidden">Euro Label</span></a></li>
+                    <li><a href="#" title="Handelsverband e-commerce Label" 6 class="sprite lab_2"><span class="hidden">Handelsverband e-commerce Label</span></a></li>
+                    <li><a href="#" title="Österreichs kundenorientiertester Dienstleister 2013 Label" 6 class="sprite lab_4"><span class="hidden">Österreichs kundenorientiertester Dienstleister 2013 Label</span></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+
+		
+		
+	
+
+    
+    	
+
+
+
+
+
+    	
+
+
+
+
+
+
+    	
+    
+
+</div>
+<div class="clearing"></div>
+</div>
+
+
+
+<a name="skipportletZ7_JU4N3JH61OGI50AGP7CATN3047"></a>
+		</td>
+		
+	</tr>
+</tbody></table>
+			</td>
+		</tr>
+	
+</tbody></table><div id="lastElement"></div>
+					</div>
+					<!-- end sezione portlet -->
+				</div>
+			</div>
+			<!--end of content-container-->
+			<div class="wpt_clear"></div>
+		<!-- </div>
+		<div class="wpt_clear"></div> -->
+		
+		<!-- CONC -->
+		<!-- <div id="wpt_footer_wrapper">
+			<a rel="dynamic-content" href="res:/XA-IPT-AT-THM-PUBLIC/themes/html/XA-IPT-AT-THM-PUBLIC/footerMenu.jsp"></a>
+			<a rel="dynamic-content" href="res:/XA-IPT-AT-THM-PUBLIC/themes/html/XA-IPT-AT-THM-PUBLIC/footer.jsp"></a>
+		</div> -->
+		
+		<!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+		This is located here instead of the head section to improve client performance. -->
+		
+<script type="text/javascript" src="./Bank Austria_files/config_js.jsp"></script>
+<script type="text/javascript">
+(function(){
+	ibmCfg.controllers = {rendering: null,navigation: null,dnd: null};
+	ibmCfg.userName = "";
+	dojo.mixin(ibmCfg.themeConfig, {editModeJSURL: "/wps/portal_dojo/v1.4.3/com/ibm/themes/PageBuilder2/theme.edit.js",themeUniqueName: "unico.UnicoPublicTheme",skinRootURI: stripTrailingSlash("/wps/contenthandler/!ut/p/digest!2ob2Gna8vtctot0Fdec6rQ/dav/fs-type1/skins"),themeRootURI: stripTrailingSlash("/wps/contenthandler/!ut/p/digest!HwQlCy6kVZKLN0bh7eIBTg/res/XA-IPT-AT-THM-PUBLIC/themes/html/XA-IPT-AT-THM-PUBLIC/"),commonResourcesRootURI: stripTrailingSlash("/wps/contenthandler/!ut/p/digest!2ob2Gna8vtctot0Fdec6rQ/dav/fs-type1/common-resources"),isRTL: false,disableSemanticTagging: true,isPageRenderModeCSA: false,navHiddenMetadata: ["com.ibm.portal.rendertype","param.sharing.scope","com.ibm.portal.Hidden","com.ibm.portal.cp.tagging.isTaggingDisabled","com.ibm.portal.cp.rating.isRatingDisabled","com.ibm.portal.theme.template.file.name.html","com.ibm.portal.layout.template.ref","com.ibm.portal.static.page.file.name.html"],portletOverridePageTitle: "user",currentContentNodeOID: "Z6_JU4N3JH61OGI50AGP7CATN30G4",contextMenus: {}});
+	var portalContext = "/wps",contextRegExp = new RegExp("^" + portalContext),locale = "en",formattedLocale = locale.replace(/_/, "-").replace(/iw/, "he").toLowerCase(),contentHandlerURI = "/wps/mycontenthandler/!ut/p/digest!rEMPdEuWslvwVxGM2K5HXg/",contentHandlerURIPublic = "/wps/contenthandler/!ut/p/digest!rEMPdEuWslvwVxGM2K5HXg/";
+	dojo.mixin(ibmCfg.enablerConfig, {"com.ibm.mashups.proxy.url" : "/wps/proxy","com.ibm.mashups.contextroot" : "/wps","com.ibm.mashups.productname" : "IBM WebSphere Portal","com.ibm.mashups.contenthandler.private": contentHandlerURI.replace(contextRegExp, ""),"com.ibm.mashups.contenthandler.public": contentHandlerURIPublic.replace(contextRegExp, ""),anonymousUser: true,"com.ibm.mashups.anonymous.mode" : "true",locale: formattedLocale,"displayLocale": formattedLocale,sessionId: "null",fontSizeEnlarged: (function(){var localePref = formattedLocale.substr(0,2);return localePref=="zh"||localePref=="ja"||localePref=="ko";})(),extensions: [],"serviceDocumentUrl":"/wps/contenthandler/!ut/p/digest!rEMPdEuWslvwVxGM2K5HXg/model/service-document",user:"null"});
+	dojo.mixin(ibmCfg.portalConfig, {portalURI: "/wps/portal",locale: locale,contentHandlerURI: contentHandlerURIPublic,themeRootURI:  "/XA-IPT-AT-THM-PUBLIC/themes/html/XA-IPT-AT-THM-PUBLIC",parentPageID: "Z6_000000000000000000000000A0",currentPageOID: "Z6_JU4N3JH61OGI50AGP7CATN30G4",bootstrapState: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><root xmlns=\"http://www.ibm.com/xmlns/prod/websphere/portal/v6.1/portal-state\"><state type=\"navigational\"><selection selection-node=\"Z6_JU4N3JH61OGI50AGP7CATN30G4\"><mapping src=\"Z6_000000000000000000000000A0\" dst=\"Z6_JU4N3JH61OGI50AGP7CATN30G4\"/></selection><shared-parameters id=\"global\"><shared-parameter nsuri=\"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams/pzn\" localpart=\"referer.url\"><value>https://www.bankaustria.at/</value></shared-parameter><shared-parameter nsuri=\"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams/pzn\" localpart=\"referer.host\"><value>www.bankaustria.at</value></shared-parameter></shared-parameters></state></root>",currentUser: "",currentUserOID: "",isUserLoggedIn: false,aggregatedStyle: "null",  wcmPageMetadata: {contentRoot: "null",sharingScope: "null"}});})();
+</script>
+<script type="text/javascript">
+
+ibmPortalConfig = ibmCfg.portalConfig;
+ibmConfig = ibmCfg.enablerConfig;
+portalMashupsConfig = {
+	portalContext: ibmCfg.portalConfig.portalContext,
+	hubURL: ibmCfg.enablerConfig.hubURL,
+	portalProxyUrl: ibmCfg.portalConfig.proxyURL,
+	serviceDocURL: ibmCfg.enablerConfig.serviceDocumentUrl,
+	contentHandlerContextPath: ibmCfg.portalConfig.contentHandlerURI
+};
+</script>
+
+	<script type="text/javascript">var ibmPortalCPConfig = null</script>
+
+
+<script type="text/javascript">
+
+(function(){
+	
+	var themeRootURI = ibmCfg.themeConfig.themeRootURI, builderRoot = ibmCfg.enablerConfig["com.ibm.mashups.contextroot.builder"];
+	dojo.registerModulePath("com.ibm.themes.PageBuilder2.menuDefinitions", themeRootURI+"/menuDefinitions");
+	dojo.registerModulePath("com.ibm.skins", ibmCfg.themeConfig.skinRootURI);
+	dojo.registerModulePath("com.ibm.common-resources", ibmCfg.themeConfig.commonResourcesRootURI);
+	dojo.registerModulePath("com.ibm.mashups", ibmCfg.enablerConfig["com.ibm.mashups.contextroot.enabler"] + "/js/com/ibm/mashups");
+	dojo.registerModulePath("com.ibm.mm", ibmCfg.enablerConfig["com.ibm.mashups.contextroot.enabler"] + "/js/com/ibm/mm");
+	dojo.registerModulePath("com.ibm.mashups.builder", ibmCfg.enablerConfig["com.ibm.mashups.contextroot.builder"] + "/js/com/ibm/mashups/builder");
+	dojo.registerModulePath("com.ibm.mm.builder", ibmCfg.enablerConfig["com.ibm.mashups.contextroot.builder"] + "/js/com/ibm/mm/builder");
+	dojo.registerModulePath("widget-catalog", ibmCfg.enablerConfig["com.ibm.mashups.contextroot.builder"] + "/widget-catalog");
+	dojo.registerModulePath("widget_catalog", dojo.moduleUrl("widget-catalog", ""));
+	
+	try {
+		var traceStr = dojo.cookie("digest.ignore.debug.traceString");
+		if(traceStr) {
+			var traceConfig = dojo.fromJson(traceStr);
+			ibmConfig.traceConfig = ibmCfg.enablerConfig.traceConfig = traceConfig;
+		}
+	}
+	catch(err){
+		
+	}
+})();
+</script>
+<div style="display:none" id="selectionPathPrimer"><ul></ul>
+</div>
+</div>
+
+
+</body></html>
